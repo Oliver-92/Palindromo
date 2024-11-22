@@ -1,12 +1,12 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(77, 2, 112);
+body {
+    background-color: rgb(43, 3, 61);
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -16,13 +16,16 @@ body{
     align-items: center;
 }
 
-.container-title{
+.container-title {
     color: white;
-    font-size: 50px;
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.palindrome-div{
-    background-color: white;
+.palindrome-div {
+    background-color: rgba(74, 91, 165, 0.808);
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -32,27 +35,52 @@ body{
     border: 2px solid black;
 }
 
-#text-input{
+#text-input {
     padding: 1rem;
 }
 
-#check-btn{
+#check-btn {
     padding: 0.7rem;
     font-size: 20px;
     width: 30%;
+    min-width: 100px;
     margin: auto;
     border-radius: 10px;
-    background-color: rgb(24, 72, 230);
+    background-color: rgb(75, 108, 219);
     color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.palindrome-def{
+#check-btn:hover {
+    background-color: rgb(51, 88, 212);
+}
+
+#result {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+.palindrome-def {
     width: 510px;
     font-size: 25px;
     border: 1px solid black;
     border-radius: 10px;
-    padding: 0.5rem 1rem;
-    background-color: rgb(5, 90, 19);
+    padding: 1rem;
+    background-color: rgba(74, 91, 165, 0.808);
+    ;
     color: aliceblue;
     margin-top: 2rem;
+}
+
+.palindrome-def>p {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+@media screen and (max-width: 510px) {
+    .palindrome-def {
+        width: auto;
+    }
 }
