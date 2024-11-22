@@ -15,9 +15,9 @@ const checkInput = () => {
     const lowerCaseStr = input.replace(/[^A-Za-z0-9]/gi, '').toLowerCase();
 
     if (lowerCaseStr === lowerCaseStr.split("").reverse().join("")) {
-        result.innerText = input + " is a palindrome";
+        result.innerText = "\"" + input + "\"" + " is a palindrome";
     } else {
-        result.innerText = input + " is not a palindrome";
+        result.innerText = "\"" + input + "\"" + " is not a palindrome";
     }
 };
 
